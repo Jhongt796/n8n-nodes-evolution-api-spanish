@@ -8,17 +8,17 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendVideo(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Parámetros obligatorios
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
 		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 		const media = ef.getNodeParameter('media', 0) as string;
 
-		// Parâmetros opcionais com valores padrão
+		// Parámetros opcionales con valores predeterminados
 		const mimetype = (ef.getNodeParameter('mimetype', 0, 'video/mp4') as string) || 'video/mp4';
 		const caption = ef.getNodeParameter('caption', 0, '') as string;
 		const fileName = (ef.getNodeParameter('fileName', 0, 'video.mp4') as string) || 'video.mp4';
 
-		// Opções adicionais
+		// Opciones adicionales
 		const options = ef.getNodeParameter('options_message', 0, {}) as {
 			delay?: number;
 			quoted?: {
@@ -91,10 +91,10 @@ export async function sendVideo(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar vídeo',
+					? 'Parámetros inválidos o ausentes'
+					: 'Error al enviar video',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Verifica si todos los campos obligatorios se completaron correctamente'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

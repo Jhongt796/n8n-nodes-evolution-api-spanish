@@ -2,12 +2,12 @@ import { INodeProperties, NodePropertyTypes } from 'n8n-workflow';
 
 export const profileFields: INodeProperties[] = [
     {
-        displayName: 'Nome Da Instância',
+        displayName: 'Nombre De La Instancia',
         name: 'instanceName',
         type: 'string' as NodePropertyTypes,
         default: '',
         required: true,
-        description: 'Digite o nome da instância',
+        description: 'Introduce el nombre de la instancia',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -15,12 +15,12 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'Nome',
+        displayName: 'Nombre',
         name: 'name',
         type: 'string' as NodePropertyTypes,
         default: '',
         required: true,
-        description: 'Novo nome do perfil',
+        description: 'Nuevo nombre del perfil',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -29,12 +29,12 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'Contato',
+        displayName: 'Contacto',
         name: 'remoteJid',
         type: 'string' as NodePropertyTypes,
         default: '',
         required: true,
-        description: 'Número do contato',
+        description: 'Número del contacto',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -47,12 +47,12 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'Status',
+        displayName: 'Estado',
         name: 'status',
         type: 'string' as NodePropertyTypes,
         default: '',
         required: true,
-        description: 'Novo status do perfil (máximo 139 caracteres)',
+        description: 'Nuevo estado del perfil (máximo 139 caracteres)',
         typeOptions: {
             maxLength: 139,
         },
@@ -64,12 +64,12 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'URL Da Imagem',
+        displayName: 'URL De La Imagen',
         name: 'picture',
         type: 'string' as NodePropertyTypes,
         default: '',
         required: true,
-        description: 'URL da imagem que será definida como foto do perfil',
+        description: 'URL de la imagen que se definirá como foto de perfil',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -78,7 +78,7 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'Confirmação De Leitura',
+        displayName: 'Confirmación De Lectura',
         name: 'readreceipts',
         type: 'options' as NodePropertyTypes,
         options: [
@@ -87,13 +87,13 @@ export const profileFields: INodeProperties[] = [
                 value: 'all',
             },
             {
-                name: 'Ninguém',
+                name: 'Nadie',
                 value: 'none',
             },
         ],
         default: 'all',
         required: true,
-        description: 'Quem pode ver quando você leu as mensagens',
+        description: 'Quién puede ver cuándo leíste los mensajes',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -102,7 +102,7 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'Foto Do Perfil',
+        displayName: 'Foto De Perfil',
         name: 'profile',
         type: 'options' as NodePropertyTypes,
         options: [
@@ -111,21 +111,21 @@ export const profileFields: INodeProperties[] = [
                 value: 'all',
             },
             {
-                name: 'Meus Contatos',
+                name: 'Mis Contactos',
                 value: 'contacts',
             },
             {
-                name: 'Exceto Contatos Específicos',
+                name: 'Excepto Contactos Específicos',
                 value: 'contact_blacklist',
             },
             {
-                name: 'Ninguém',
+                name: 'Nadie',
                 value: 'none',
             },
         ],
         default: 'all',
         required: true,
-        description: 'Quem pode ver sua foto de perfil',
+        description: 'Quién puede ver tu foto de perfil',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -134,7 +134,7 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'Status',
+        displayName: 'Estado',
         name: 'status',
         type: 'options' as NodePropertyTypes,
         options: [
@@ -143,21 +143,21 @@ export const profileFields: INodeProperties[] = [
                 value: 'all',
             },
             {
-                name: 'Meus Contatos',
+                name: 'Mis Contactos',
                 value: 'contacts',
             },
             {
-                name: 'Exceto Contatos Específicos',
+                name: 'Excepto Contactos Específicos',
                 value: 'contact_blacklist',
             },
             {
-                name: 'Ninguém',
+                name: 'Nadie',
                 value: 'none',
             },
         ],
         default: 'contacts',
         required: true,
-        description: 'Quem pode ver seu status',
+        description: 'Quién puede ver tu estado',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -166,7 +166,7 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'Online',
+        displayName: 'En Línea',
         name: 'online',
         type: 'options' as NodePropertyTypes,
         options: [
@@ -175,13 +175,13 @@ export const profileFields: INodeProperties[] = [
                 value: 'all',
             },
             {
-                name: 'Igual Ao Visto Por Último',
+                name: 'Igual A Visto Por Última Vez',
                 value: 'match_last_seen',
             },
         ],
         default: 'all',
         required: true,
-        description: 'Quem pode ver quando você está online',
+        description: 'Quién puede ver cuándo estás en línea',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -190,7 +190,7 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'Visto Por Último',
+        displayName: 'Visto Por Última Vez',
         name: 'last',
         type: 'options' as NodePropertyTypes,
         options: [
@@ -199,21 +199,21 @@ export const profileFields: INodeProperties[] = [
                 value: 'all',
             },
             {
-                name: 'Meus Contatos',
+                name: 'Mis Contactos',
                 value: 'contacts',
             },
             {
-                name: 'Exceto Contatos Específicos',
+                name: 'Excepto Contactos Específicos',
                 value: 'contact_blacklist',
             },
             {
-                name: 'Ninguém',
+                name: 'Nadie',
                 value: 'none',
             },
         ],
         default: 'contacts',
         required: true,
-        description: 'Quem pode ver seu último acesso',
+        description: 'Quién puede ver tu última conexión',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -231,17 +231,17 @@ export const profileFields: INodeProperties[] = [
                 value: 'all',
             },
             {
-                name: 'Meus Contatos',
+                name: 'Mis Contactos',
                 value: 'contacts',
             },
             {
-                name: 'Exceto Contatos Específicos',
+                name: 'Excepto Contactos Específicos',
                 value: 'contact_blacklist',
             },
         ],
         default: 'all',
         required: true,
-        description: 'Quem pode te adicionar em grupos',
+        description: 'Quién puede añadirte a grupos',
         displayOptions: {
             show: {
                 resource: ['profile-api'],

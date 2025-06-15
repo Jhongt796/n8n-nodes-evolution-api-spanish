@@ -1,15 +1,15 @@
 import { INodeProperties } from 'n8n-workflow';
 
-// Campo das Eventos
+// Campo de Eventos
 export const eventsFields: INodeProperties[] = [
 	// Campos = Webhook
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Nombre De La Instancia',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Introduce el nombre de la instancia que enviará el mensaje',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -18,7 +18,7 @@ export const eventsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'O Que Deseja Fazer',
+		displayName: 'Qué Desea Hacer',
 		name: 'resourceForWebhook',
 		type: 'options',
 		options: [
@@ -32,7 +32,7 @@ export const eventsFields: INodeProperties[] = [
 			},
 		],
 		default: 'setWebhook',
-		description: 'Escolha entre definir um novo webhook ou verificar o webhook',
+		description: 'Elige entre definir un nuevo webhook o verificar el webhook existente',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -41,11 +41,11 @@ export const eventsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Ativar Webhook',
+		displayName: 'Activar Webhook',
 		name: 'enabled',
 		type: 'boolean',
 		default: true,
-		description: 'Whether to enable or disable integration with Webhook',
+		description: 'Define si se habilita o deshabilita la integración con Webhook',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -55,11 +55,11 @@ export const eventsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Url Do Webhook',
+		displayName: 'URL Del Webhook',
 		name: 'webhookUrl',
 		type: 'string',
 		default: '',
-		description: 'Digite a URL que vai receber os eventos do Webhook',
+		description: 'Introduce la URL que recibirá los eventos del Webhook',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -74,7 +74,7 @@ export const eventsFields: INodeProperties[] = [
 		type: 'boolean',
 		default: false,
 		description:
-			'Whether to create a route for each event by appending the event name to the end of the URL',
+			'Define si se crea una ruta para cada evento anexando el nombre del evento al final de la URL',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -84,11 +84,11 @@ export const eventsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Base64 No Webhook',
+		displayName: 'Base64 En Webhook',
 		name: 'webhookBase64',
 		type: 'boolean',
 		default: false,
-		description: 'Whether to send media data in base64 format in the webhook',
+		description: 'Define si se envían los datos multimedia en formato base64 en el webhook',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -207,12 +207,12 @@ export const eventsFields: INodeProperties[] = [
 
 	// Campos = RabbitMQ
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Nombre De La Instancia',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Introduce el nombre de la instancia que enviará el mensaje',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -221,7 +221,7 @@ export const eventsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'O Que Deseja Fazer',
+		displayName: 'Qué Desea Hacer',
 		name: 'resourceForRabbitMQ',
 		type: 'options',
 		options: [
@@ -235,7 +235,7 @@ export const eventsFields: INodeProperties[] = [
 			},
 		],
 		default: 'setRabbitMQ',
-		description: 'Escolha entre ativar/desativar RabbitMQ ou verificar o RabbitMQ',
+		description: 'Elige entre activar/desactivar RabbitMQ o verificar el RabbitMQ existente',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -244,11 +244,11 @@ export const eventsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Ativar RabbitMQ',
+		displayName: 'Activar RabbitMQ',
 		name: 'enabled',
 		type: 'boolean',
 		default: true,
-		description: 'Whether to enable or disable integration with RabbitMQ',
+		description: 'Define si se habilita o deshabilita la integración con RabbitMQ',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],

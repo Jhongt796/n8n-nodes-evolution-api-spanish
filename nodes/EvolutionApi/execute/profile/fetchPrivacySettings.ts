@@ -28,7 +28,7 @@ export async function fetchPrivacySettings(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao buscar configurações de privacidade',
+                details: 'Error al buscar configuraciones de privacidad',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

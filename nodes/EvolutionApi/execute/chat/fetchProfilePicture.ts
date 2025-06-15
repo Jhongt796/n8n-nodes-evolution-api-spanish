@@ -34,7 +34,7 @@ export async function fetchProfilePicture(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao buscar foto do perfil',
+                details: 'Error al buscar foto de perfil',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

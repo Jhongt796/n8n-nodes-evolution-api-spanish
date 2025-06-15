@@ -7,11 +7,11 @@ export const resources: INodeProperties = {
 	noDataExpression: true,
 	options: [
 		{
-			name: 'Instância',
+			name: 'Instancia',
 			value: 'instances-api',
 		},
 		{
-			name: 'Mensagem',
+			name: 'Mensaje',
 			value: 'messages-api',
 		},
 		{
@@ -31,7 +31,7 @@ export const resources: INodeProperties = {
 			value: 'events-api',
 		},
 		{
-			name: 'Integração',
+			name: 'Integración',
 			value: 'integrations-api',
 		},
 	],

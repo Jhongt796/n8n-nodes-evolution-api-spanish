@@ -35,7 +35,7 @@ export async function updateGroupPicture(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao atualizar imagem do grupo',
+                details: 'Error al actualizar la imagen del grupo',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

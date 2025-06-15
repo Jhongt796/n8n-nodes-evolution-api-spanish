@@ -1,8 +1,8 @@
 import { INodeProperties } from 'n8n-workflow';
 
-// Opções da messages-api (Mensagens)
+// Opciones de messages-api (Mensajes)
 export const messagesOperationsOptions: INodeProperties = {
-	displayName: 'Operação',
+	displayName: 'Operación',
 	name: 'operation',
 	type: 'options',
 	noDataExpression: true,
@@ -16,8 +16,8 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Text
 			name: 'Enviar Texto',
-			action: 'Enviar texto',
-			description: 'Envia mensagem de Texto',
+			action: 'Enviar Texto',
+			description: 'Envía mensaje de Texto',
 			value: 'send-text',
 		},
 
@@ -25,8 +25,8 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Media
 			name: 'Enviar Imagem',
-			action: 'Enviar imagem',
-			description: 'Envia mensagem de Imagem',
+			action: 'Enviar Imagen',
+			description: 'Envía mensaje de Imagen',
 			value: 'send-image',
 		},
 
@@ -34,8 +34,8 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Media
 			name: 'Enviar Video',
-			action: 'Enviar video',
-			description: 'Enviar mensagem de Video',
+			action: 'Enviar Video',
+			description: 'Envía mensaje de Video',
 			value: 'send-video',
 		},
 
@@ -43,8 +43,8 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Narrated Audio
 			name: 'Enviar Audio',
-			action: 'Enviar audio',
-			description: 'Enviar mensagem de Audio',
+			action: 'Enviar Audio',
+			description: 'Envía mensaje de Audio',
 			value: 'send-audio',
 		},
 
@@ -52,8 +52,8 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Media
 			name: 'Enviar Documento',
-			action: 'Enviar documento',
-			description: 'Enviar mensagem com Documento',
+			action: 'Enviar Documento',
+			description: 'Envía mensaje con Documento',
 			value: 'send-document',
 		},
 
@@ -61,32 +61,32 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Poll
 			name: 'Enviar Enquete',
-			action: 'Enviar enquete',
-			description: 'Envia uma Enquete de até 12 opções',
+			action: 'Enviar Encuesta',
+			description: 'Envía una Encuesta de hasta 12 opciones',
 			value: 'send-poll',
 		},
 
 		// Opção = Enviar Contato
 		{
 			name: 'Enviar Contato',
-			action: 'Enviar contato',
-			description: 'Envia um contato no whatsapp',
+			action: 'Enviar Contacto',
+			description: 'Envía un contacto en WhatsApp',
 			value: 'send-contact',
 		},
 
 		// Opção = Enviar Lista
 		{
 			name: 'Enviar Lista',
-			action: 'Enviar lista',
-			description: 'Envia uma lista de opções interativa',
+			action: 'Enviar Lista',
+			description: 'Envía una lista de opciones interactiva',
 			value: 'send-list',
 		},
 
 		// Opção = Enviar Botões
 		{
 			name: 'Enviar Botões',
-			action: 'Enviar bot es',
-			description: 'Envia mensagem com botões interativos',
+			action: 'Enviar botones',
+			description: 'Envía mensaje con botones interactivos',
 			value: 'send-buttons',
 		},
 
@@ -94,26 +94,26 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			name: 'Enviar PIX',
 			action: 'Enviar PIX',
-			description: 'Envia botão de pagamento PIX',
+			description: 'Envía botón de pago PIX',
 			value: 'send-pix',
 		},
 
 		// Opção = Enviar Status
 		{
-			name: 'Enviar Status',
-			action: 'Enviar status',
-			description: 'Publicar um Status/Stories',
+			name: 'Enviar Estado',
+			action: 'Enviar Estado',
+			description: 'Publicar un Estado/Historia',
 			value: 'send-stories',
 		},
 
 		// Opção = Reagir Mensagem
 		{
-			name: 'Reagir Mensagem',
-			action: 'Reagir mensagem',
-			description: 'Adiciona uma reação em uma mensagem',
+			name: 'Reaccionar Mensaje',
+			action: 'Reaccionar Mensaje',
+			description: 'Añade una reacción a un mensaje',
 			value: 'send-reaction',
 		},
 	],
-	// Definindo como padrão a opção "Enviar Texto"
+	// Definiendo como predeterminada la opción "Enviar Texto"
 	default: 'send-text',
 };

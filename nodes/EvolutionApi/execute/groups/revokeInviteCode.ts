@@ -29,7 +29,7 @@ export async function revokeInviteCode(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao revogar código de convite do grupo',
+                details: 'Error al revocar el código de invitación del grupo',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

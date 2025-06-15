@@ -8,7 +8,7 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendStories(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Parámetros obligatorios
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
 		const content = ef.getNodeParameter('content', 0) as string;
 		const type = ef.getNodeParameter('type', 0) as 'text' | 'image' | 'video' | 'audio';
@@ -17,13 +17,13 @@ export async function sendStories(ef: IExecuteFunctions) {
 		const backgroundColor = ef.getNodeParameter('backgroundColor', 0, '#000000') as string;
 		const font = ef.getNodeParameter('font', 0, 1) as number;
 
-		// Validação da URL do conteúdo para tipos não texto
+		// Validación de la URL del contenido para tipos no textuales
 		if (type !== 'text' && !content.startsWith('http') && !content.startsWith('data:')) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Formato de conteúdo inválido',
-					details: 'O conteúdo deve ser uma URL válida ou um base64',
+					message: 'Formato de contenido inválido',
+					details: 'El contenido debe ser una URL válida o un base64',
 					code: 'INVALID_CONTENT_FORMAT',
 					timestamp: new Date().toISOString(),
 				},
@@ -42,12 +42,12 @@ export async function sendStories(ef: IExecuteFunctions) {
 			allContacts
 		};
 
-		// Adiciona caption apenas para imagem ou vídeo
+		// Añade leyenda solo para imagen o video
 		if ((type === 'image' || type === 'video') && caption) {
 			body.caption = caption;
 		}
 
-		// Se não for para todos os contatos, pega a lista específica
+		// Si no es para todos los contactos, obtiene la lista específica
 		if (!allContacts) {
 			const statusJidList = ef.getNodeParameter('statusJidList', 0, '') as string;
 			if (statusJidList) {
@@ -70,7 +70,7 @@ export async function sendStories(ef: IExecuteFunctions) {
 		const response = await evolutionRequest(ef, requestOptions);
 
 		if (!response) {
-			throw new Error('Resposta vazia do servidor');
+			throw new Error('Respuesta vacía del servidor');
 		}
 
 		return {
@@ -84,10 +84,10 @@ export async function sendStories(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar status',
+					? 'Parámetros inválidos o ausentes'
+					: 'Error al enviar estado',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Verifica si todos los campos obligatorios se completaron correctamente'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

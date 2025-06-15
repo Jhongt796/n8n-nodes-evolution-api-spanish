@@ -13,17 +13,17 @@ export async function sendImage(ef: IExecuteFunctions) {
 
 	for (let i = 0; i < items.length; i++) {
 		try {
-			// Parâmetros obrigatórios
+			// Parámetros obligatorios
 			const instanceName = ef.getNodeParameter('instanceName', i) as string;
 			const remoteJid = ef.getNodeParameter('remoteJid', i) as string;
 			const media = ef.getNodeParameter('media', i) as string;
 
-			// Parâmetros opcionais com valores padrão
+			// Parámetros opcionales con valores predeterminados
 			const mimetype = (ef.getNodeParameter('mimetype', i, 'image/jpeg') as string) || 'image/jpeg';
 			const caption = ef.getNodeParameter('caption', i, '') as string;
 			const fileName = (ef.getNodeParameter('fileName', i, 'image.jpg') as string) || 'image.jpg';
 
-			// Opções adicionais
+			// Opciones adicionales
 			const options = ef.getNodeParameter('options_message', i, {}) as {
 				delay?: number;
 				quoted?: {
@@ -93,11 +93,11 @@ export async function sendImage(ef: IExecuteFunctions) {
 			});
 		} catch (error) {
 			const errorMessage = error.message.includes('Could not get parameter')
-				? 'Parâmetros inválidos ou ausentes'
-				: 'Erro ao enviar imagem';
+				? 'Parámetros inválidos o ausentes'
+				: 'Error al enviar imagen';
 
 			const errorDetails = error.message.includes('Could not get parameter')
-				? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+				? 'Verifica si todos los campos obligatorios se completaron correctamente'
 				: error.message;
 
 			if (!ef.continueOnFail()) {

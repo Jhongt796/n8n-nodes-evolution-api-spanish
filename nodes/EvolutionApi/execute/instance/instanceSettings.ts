@@ -53,10 +53,10 @@ export async function instanceSettings(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao definir configurações da instância',
+					? 'Parámetros inválidos o ausentes'
+					: 'Error al definir las configuraciones de la instancia',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Verifica si todos los campos obligatorios se completaron correctamente'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

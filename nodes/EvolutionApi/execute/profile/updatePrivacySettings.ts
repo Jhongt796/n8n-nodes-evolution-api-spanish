@@ -44,7 +44,7 @@ export async function updatePrivacySettings(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao atualizar configurações de privacidade',
+                details: 'Error al actualizar las configuraciones de privacidad',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

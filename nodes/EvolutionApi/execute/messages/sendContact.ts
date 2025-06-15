@@ -8,7 +8,7 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendContact(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Parámetros obligatorios
 		const instanceName = ef.getNodeParameter('instanceName', 0);
 		const remoteJid = ef.getNodeParameter('remoteJid', 0);
 		const contacts = ef.getNodeParameter('contacts.contactValues', 0) as {
@@ -20,13 +20,13 @@ export async function sendContact(ef: IExecuteFunctions) {
 			url?: string;
 		}[];
 
-		// Validação dos contatos
+		// Validación de los contactos
 		if (!Array.isArray(contacts) || contacts.length === 0) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Lista de contatos inválida',
-					details: 'É necessário fornecer pelo menos um contato',
+					message: 'Lista de contactos inválida',
+					details: 'Es necesario proporcionar al menos un contacto',
 					code: 'INVALID_CONTACTS',
 					timestamp: new Date().toISOString(),
 				},
@@ -71,10 +71,10 @@ export async function sendContact(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar contato',
+					? 'Parámetros inválidos o ausentes'
+					: 'Error al enviar contacto',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Verifica si todos los campos obligatorios se completaron correctamente'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

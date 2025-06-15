@@ -34,7 +34,7 @@ export async function updateProfilePicture(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao atualizar foto do perfil',
+                details: 'Error al actualizar la foto de perfil',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

@@ -24,7 +24,7 @@ export async function createInstanceBasic(ef: IExecuteFunctions) {
 			body.number = number;
 		}
 
-		// Verifica e adiciona configurações da instância se existirem
+		// Verifica y añade configuraciones de la instancia si existen
 		const instanceSettings = ef.getNodeParameter(
 			'options_Create_instance.instanceSettings.settings',
 			0,
@@ -42,7 +42,7 @@ export async function createInstanceBasic(ef: IExecuteFunctions) {
 			Object.assign(body, instanceSettings);
 		}
 
-		// Verifica e adiciona configurações de proxy se existirem
+		// Verifica y añade configuraciones de proxy si existen
 		const proxySettings = ef.getNodeParameter(
 			'options_Create_instance.proxy.proxySettings',
 			0,
@@ -64,7 +64,7 @@ export async function createInstanceBasic(ef: IExecuteFunctions) {
 			});
 		}
 
-		// Verifica e adiciona configurações do Webhook se existirem
+		// Verifica y añade configuraciones de Webhook si existen
 		const webhookSettings = ef.getNodeParameter(
 			'options_Create_instance.webhook.webhookSettings',
 			0,
@@ -87,7 +87,7 @@ export async function createInstanceBasic(ef: IExecuteFunctions) {
 			});
 		}
 
-		// Verifica e adiciona configurações do RabbitMQ se existirem
+		// Verifica y añade configuraciones de RabbitMQ si existen
 		const rabbitmqSettings = ef.getNodeParameter(
 			'options_Create_instance.rabbitmq.rabbitmqSettings',
 			0,
@@ -105,7 +105,7 @@ export async function createInstanceBasic(ef: IExecuteFunctions) {
 			});
 		}
 
-		// Verifica e adiciona configurações do Chatwoot se existirem
+		// Verifica y añade configuraciones de Chatwoot si existen
 		const chatwootSettings = ef.getNodeParameter(
 			'options_Create_instance.chatwoot.chatwootSettings',
 			0,
@@ -126,7 +126,7 @@ export async function createInstanceBasic(ef: IExecuteFunctions) {
 			chatwootLogo?: string;
 		};
 
-		// Adiciona todos os campos do Chatwoot
+		// Añade todos los campos de Chatwoot
 		if (chatwootSettings && Object.keys(chatwootSettings).length > 0) {
 			Object.assign(body, {
 				chatwootAccountId: chatwootSettings.chatwootAccountId || '',
@@ -155,10 +155,10 @@ export async function createInstanceBasic(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao criar instância',
+					? 'Parámetros inválidos o ausentes'
+					: 'Error al crear instancia',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Verifica si todos los campos obligatorios se completaron correctamente'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

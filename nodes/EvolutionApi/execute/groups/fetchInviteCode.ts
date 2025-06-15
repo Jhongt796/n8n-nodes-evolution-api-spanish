@@ -29,7 +29,7 @@ export async function fetchInviteCode(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao buscar código de convite do grupo',
+                details: 'Error al buscar el código de invitación del grupo',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},
