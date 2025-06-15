@@ -6,7 +6,7 @@ Estos Nodos Comunitarios son una solución 100% gratuita, creada con el intuito 
 <br>
 	
 <div align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2Fn8n-nodes-evolution-api&query=downloads&style=for-the-badge&label=Total%20de%20Descargas&labelColor=%230d1117&color=%23359514&cacheSeconds=30&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fn8n-nodes-evolution-api" alt="Dynamic JSON Badge">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2Fn8n-nodes-evolution-api-spanish&query=downloads&style=for-the-badge&label=Total%20de%20Descargas&labelColor=%230d1117&color=%23359514&cacheSeconds=30&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fn8n-nodes-evolution-api-spanish" alt="Dynamic JSON Badge">
 </div>
 <br>
 </p>
@@ -16,12 +16,12 @@ Estos Nodos Comunitarios son una solución 100% gratuita, creada con el intuito 
   <a href="https://oriondesign.art.br/whatsapp3"><img src="https://github.com/user-attachments/assets/91aa7733-c09c-474f-9483-54cb678213d2" alt=”SetupOrion” ></a>
 </p>
 
-
 <h1></h1>
 
 <h3>⚙️ Requisitos</h3>
 
 Para utilizar nuestro **Nodo Comunitario**, es necesario cumplir con los siguientes requisitos:
+
 - **N8N** en la versión **1.54.4** o superior
 - **API Evolution** en la versión **2.2.0** o superior
 
@@ -241,6 +241,7 @@ Para utilizar nuestro **Nodo Comunitario**, es necesario cumplir con los siguien
 <h3>🤝 Contribución</h3>
 
 ¡Contribuye al crecimiento de este proyecto! Puedes ayudar de diversas formas:
+
 - **Pull Requests**: Envía mejoras, correcciones o nuevas funcionalidades.
 - **Issues**: Reporta problemas o sugiere nuevas ideas.
 - **Sugerencias**: Comparte tus opiniones y feedbacks.
@@ -249,8 +250,8 @@ Para utilizar nuestro **Nodo Comunitario**, es necesario cumplir con los siguien
 <h1></h1>
 
 <h3>📌 Principales contribuyentes</h3>
-<a align="center" href="https://github.com/oriondesign2015/n8n-nodes-evolution-api/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=oriondesign2015/n8n-nodes-evolution-api" />
+<a align="center" href="https://github.com/oriondesign2015/n8n-nodes-evolution-api-spanish/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=oriondesign2015/n8n-nodes-evolution-api-spanish" />
 </a>
 
 <h1></h1>

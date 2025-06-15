@@ -1,3 +1,13 @@
+documento:
+
+Este paquete es un fork del repositorio original `n8n-nodes-evolution-api` y existe únicamente para ofrecer una versión en español de los nodos, ya que n8n aún no soporta internacionalización (i18n) en los Community Nodes.
+
+**No se da soporte ni se reciben issues en este repositorio.**
+
+Para cualquier consulta, soporte o nuevas funcionalidades, dirígete siempre al repositorio original: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+
+---
+
 Observación de este documento:
 Este documento sirve para la Definición de Operaciones que deben aparecer
 en cada Recurso, incluyendo la creación de nuevos campos para cada Operación

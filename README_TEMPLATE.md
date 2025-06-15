@@ -1,3 +1,13 @@
+# Fork de n8n-nodes-evolution-api
+
+**Este pacote é um fork do repositório original [`n8n-nodes-evolution-api`](https://github.com/oriondesign2015/n8n-nodes-evolution-api).**
+
+> **Propósito:** Este fork existe únicamente para ofrecer una versión en español de los nodos, ya que actualmente n8n no soporta internacionalización (i18n) en los Community Nodes. **No se da soporte ni se reciben issues en este repositorio.**
+
+**Para soporte, reportes de bugs, nuevas funcionalidades o cualquier otra consulta, dirígete siempre al [repositorio original](https://github.com/oriondesign2015/n8n-nodes-evolution-api).**
+
+---
+
 ![image](https://github.com/user-attachments/assets/813b7b34-377c-42e8-9f1a-12e27e682c7f)
 
 <p align="center"><br>
@@ -6,7 +16,7 @@ Este Community Nodes é uma solução 100% gratuita, criada com o intuito de sim
 <br>
 	
 <div align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2Fn8n-nodes-evolution-api&query=downloads&style=for-the-badge&label=Total%20de%20Downloads&labelColor=%230d1117&color=%23359514&cacheSeconds=30&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fn8n-nodes-evolution-api" alt="Dynamic JSON Badge">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2Fn8n-nodes-evolution-api-spanish&query=downloads&style=for-the-badge&label=Total%20de%20Downloads&labelColor=%230d1117&color=%23359514&cacheSeconds=30&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fn8n-nodes-evolution-api-spanish" alt="Dynamic JSON Badge">
 </div>
 <br>
 </p>
@@ -16,14 +26,14 @@ Este Community Nodes é uma solução 100% gratuita, criada com o intuito de sim
   <a href="https://oriondesign.art.br/whatsapp3"><img src="https://github.com/user-attachments/assets/91aa7733-c09c-474f-9483-54cb678213d2" alt=”SetupOrion” ></a>
 </p>
 
-
 <h1></h1>
 
 <h3>⚙️ Requisitos</h3>
 
-Para utilizar o nosso **Community Node**, é necessário atender aos seguintes requisitos:  
-- **N8N** na versão **1.54.4** ou superior  
-- **Evolution API** na versão **2.2.0** ou superior  
+Para utilizar o nosso **Community Node**, é necessário atender aos seguintes requisitos:
+
+- **N8N** na versão **1.54.4** ou superior
+- **Evolution API** na versão **2.2.0** ou superior
 
 <h1></h1>
 
@@ -240,17 +250,18 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 
 <h3>🤝 Contribuição</h3>
 
-Contribua para o crescimento deste projeto! Você pode ajudar de diversas formas:  
-- **Pull Requests**: Envie melhorias, correções ou novas funcionalidades.  
-- **Issues**: Relate problemas ou sugira novas ideias.  
-- **Sugestões**: Compartilhe suas opiniões e feedbacks.  
-- **Documentação**: Ajude a melhorar ou expandir a documentação existente.  
+Contribua para o crescimento deste projeto! Você pode ajudar de diversas formas:
+
+- **Pull Requests**: Envie melhorias, correções ou novas funcionalidades.
+- **Issues**: Relate problemas ou sugira novas ideias.
+- **Sugestões**: Compartilhe suas opiniões e feedbacks.
+- **Documentação**: Ajude a melhorar ou expandir a documentação existente.
 
 <h1></h1>
 
 <h3>📌 Principais contribuidores</h3>
-<a align="center" href="https://github.com/oriondesign2015/n8n-nodes-evolution-api/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=oriondesign2015/n8n-nodes-evolution-api" />
+<a align="center" href="https://github.com/oriondesign2015/n8n-nodes-evolution-api-spanish/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=oriondesign2015/n8n-nodes-evolution-api-spanish" />
 </a>
 
 <h1></h1>
