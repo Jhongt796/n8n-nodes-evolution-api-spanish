@@ -109,7 +109,7 @@ export const messagesFields: INodeProperties[] = [
 								name: 'mentionsEveryOne',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se mencionan todos los participantes del grupo',
+								description: 'Whether to mention all group participants',
 							},
 							{
 								displayName: 'Números Para Mencionar',
@@ -132,7 +132,7 @@ export const messagesFields: INodeProperties[] = [
 				name: 'linkPreview',
 				type: 'boolean',
 				default: true,
-				description: 'Define si se habilita o deshabilita la vista previa de enlace en el mensaje',
+				description: 'Whether to enable or disable link preview in the message',
 			},
 		],
 		displayOptions: {
@@ -265,7 +265,7 @@ export const messagesFields: INodeProperties[] = [
 								name: 'mentionsEveryOne',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se mencionan todos los participantes del grupo',
+								description: 'Whether to mention all group participants',
 							},
 							{
 								displayName: 'Números Para Mencionar',
@@ -414,7 +414,7 @@ export const messagesFields: INodeProperties[] = [
 								name: 'mentionsEveryOne',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se mencionan todos los participantes del grupo',
+								description: 'Whether to mention all group participants',
 							},
 							{
 								displayName: 'Números Para Mencionar',
@@ -713,7 +713,7 @@ export const messagesFields: INodeProperties[] = [
 								name: 'mentionsEveryOne',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se mencionan todos los participantes del grupo',
+								description: 'Whether to mention all group participants',
 							},
 							{
 								displayName: 'Números Para Mencionar',
@@ -891,7 +891,7 @@ export const messagesFields: INodeProperties[] = [
 								name: 'mentionsEveryOne',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se mencionan todos los participantes del grupo',
+								description: 'Whether to mention all group participants',
 							},
 							{
 								displayName: 'Números Para Mencionar',
@@ -1176,7 +1176,7 @@ export const messagesFields: INodeProperties[] = [
 								name: 'mentionsEveryOne',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se mencionan todos los participantes del grupo',
+								description: 'Whether to mention all group participants',
 							},
 							{
 								displayName: 'Números Para Mencionar',
@@ -1523,7 +1523,7 @@ export const messagesFields: INodeProperties[] = [
 								name: 'mentionsEveryOne',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se mencionan todos los participantes del grupo',
+								description: 'Whether to mention all group participants',
 							},
 							{
 								displayName: 'Números Para Mencionar',
@@ -1608,7 +1608,7 @@ export const messagesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Pie de página',
+		displayName: 'Pie De Página',
 		name: 'footer',
 		type: 'string',
 		default: '',
@@ -1825,7 +1825,7 @@ export const messagesFields: INodeProperties[] = [
 		name: 'allContacts',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se envía el estado a todos los contactos',
+		description: 'Whether to send the status to all contacts',
 		displayOptions: {
 			show: {
 				resource: ['messages-api'],
@@ -1897,7 +1897,7 @@ export const messagesFields: INodeProperties[] = [
 		name: 'fromMe',
 		type: 'boolean',
 		default: true,
-		description: 'Define si este es tu propio mensaje',
+		description: 'Whether this is your own message',
 		displayOptions: {
 			show: {
 				resource: ['messages-api'],

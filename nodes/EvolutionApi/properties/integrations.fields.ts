@@ -41,10 +41,9 @@ export const integrationsFields: INodeProperties[] = [
 	},
 	{
 		displayName: 'Activar Chatwoot',
-		name: 'enabled',
-		type: 'boolean',
+		name: 'enabled',		type: 'boolean',
 		default: true,
-		description: 'Define si se habilita o deshabilita la integración con Chatwoot',
+		description: 'Whether to enable or disable the Chatwoot integration',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -106,7 +105,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'chatwootSignMsg',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se habilita o deshabilita la firma del agente de Chatwoot',
+		description: 'Whether to enable or disable the Chatwoot agent signature',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -120,7 +119,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'chatwootReopenConversation',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se habilita o deshabilita la reapertura de mensajes en Chatwoot',
+		description: 'Whether to enable or disable reopening messages in Chatwoot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -134,7 +133,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'chatwootConversationPending',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se inician las conversaciones como pendientes en Chatwoot',
+		description: 'Whether to start conversations as pending in Chatwoot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -148,7 +147,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'chatwootImportContacts',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se importan los contactos a Chatwoot',
+		description: 'Whether to import contacts to Chatwoot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -176,7 +175,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'chatwootMergeBrazilContacts',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se unen los contactos brasileños en Chatwoot',
+		description: 'Whether to merge Brazilian contacts in Chatwoot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -190,7 +189,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'chatwootImportMessages',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se importan los mensajes a Chatwoot',
+		description: 'Whether to import messages to Chatwoot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -219,7 +218,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'chatwootAutoCreate',
 		type: 'boolean',
 		default: true,
-		description: 'Define si se crea una bandeja de entrada automáticamente',
+		description: 'Whether to create an inbox automatically',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -408,11 +407,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Comienza con',
+				name: 'Comienza Con',
 				value: 'startsWith',
 			},
 			{
-				name: 'Termina con',
+				name: 'Termina Con',
 				value: 'endsWith',
 			},
 			{
@@ -511,9 +510,8 @@ export const integrationsFields: INodeProperties[] = [
 	{
 		displayName: 'Escucha Mensajes Enviadas Por Mim',
 		name: 'listeningFromMe',
-		type: 'boolean',
-		default: false,
-		description: 'Define si el bot escucha los mensajes enviados por mí',
+		type: 'boolean',		default: false,
+		description: 'Whether the bot listens to messages sent by me',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -525,9 +523,8 @@ export const integrationsFields: INodeProperties[] = [
 	{
 		displayName: 'Pausa O Bot Quando Eu Enviar Uma Mensagem',
 		name: 'stopBotFromMe',
-		type: 'boolean',
-		default: false,
-		description: 'Define si el bot se pausa cuando envío un mensaje',
+		type: 'boolean',		default: false,
+		description: 'Whether the bot pauses when I send a message',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -539,9 +536,8 @@ export const integrationsFields: INodeProperties[] = [
 	{
 		displayName: 'Mantem a Sessão Do Bot Aberta',
 		name: 'keepOpen',
-		type: 'boolean',
-		default: false,
-		description: 'Define si se mantiene abierta la sesión del bot',
+		type: 'boolean',		default: false,
+		description: 'Whether to keep the bot session open',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -588,7 +584,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'startSession',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se habilita o deshabilita la integración con Chatwoot',
+		description: 'Whether to start a new session',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -814,11 +810,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Comienza con',
+				name: 'Comienza Con',
 				value: 'startsWith',
 			},
 			{
-				name: 'Termina con',
+				name: 'Termina Con',
 				value: 'endsWith',
 			},
 			{
@@ -919,7 +915,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'listeningFromMe',
 		type: 'boolean',
 		default: false,
-		description: 'Define si el bot escucha los mensajes enviados por mí',
+		description: 'Whether the bot escucha los mensajes enviados por mí',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -933,7 +929,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'stopBotFromMe',
 		type: 'boolean',
 		default: false,
-		description: 'Define si el bot se pausa cuando envío un mensaje',
+		description: 'Whether the bot se pausa cuando envío un mensaje',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -947,7 +943,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'keepOpen',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se mantiene abierta la sesión del bot',
+		description: 'Whether to keep abierta la sesión del bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1198,11 +1194,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Comienza con',
+				name: 'Comienza Con',
 				value: 'startsWith',
 			},
 			{
-				name: 'Termina con',
+				name: 'Termina Con',
 				value: 'endsWith',
 			},
 			{
@@ -1302,7 +1298,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'listeningFromMe',
 		type: 'boolean',
 		default: false,
-		description: 'Define si el bot escucha los mensajes enviados por mí',
+		description: 'Whether the bot escucha los mensajes enviados por mí',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1316,7 +1312,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'stopBotFromMe',
 		type: 'boolean',
 		default: false,
-		description: 'Define si el bot se pausa cuando envío un mensaje',
+		description: 'Whether the bot se pausa cuando envío un mensaje',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1330,7 +1326,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'keepOpen',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se mantiene abierta la sesión del bot',
+		description: 'Whether to keep abierta la sesión del bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1546,11 +1542,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Comienza con',
+				name: 'Comienza Con',
 				value: 'startsWith',
 			},
 			{
-				name: 'Termina con',
+				name: 'Termina Con',
 				value: 'endsWith',
 			},
 			{
@@ -1651,7 +1647,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'listeningFromMe',
 		type: 'boolean',
 		default: false,
-		description: 'Define si el bot escucha los mensajes enviados por mí',
+		description: 'Whether the bot escucha los mensajes enviados por mí',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1665,7 +1661,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'stopBotFromMe',
 		type: 'boolean',
 		default: false,
-		description: 'Define si el bot se pausa cuando envío un mensaje',
+		description: 'Whether the bot se pausa cuando envío un mensaje',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1679,7 +1675,7 @@ export const integrationsFields: INodeProperties[] = [
 		name: 'keepOpen',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se mantiene abierta la sesión del bot',
+		description: 'Whether to keep abierta la sesión del bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1781,11 +1777,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Comienza con',
+				name: 'Comienza Con',
 				value: 'startsWith',
 			},
 			{
-				name: 'Termina con',
+				name: 'Termina Con',
 				value: 'endsWith',
 			},
 			{

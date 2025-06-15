@@ -11,18 +11,16 @@ export const integrationsOperationsOptions: INodeProperties = {
 			resource: ['integrations-api'], // Value do Resource
 		},
 	},
-	options: [
-		{
+	options: [		{
 			// Set/find Chatwoot
 			name: 'Chatwoot',
 			action: 'Chatwoot',
 			description: 'Define/Busca integración con Chatwoot',
 			value: 'chatwoot',
-		},
-		{
+		},		{
 			// Create/find/fetch/Update/Delete/Start/Change Status/Fetch Sessions da Evolution Bot
 			name: 'Evolution Bot',
-			action: 'Evolution Bot',
+			action: 'Evolution bot',
 			description: 'Controla la integración con Evolution Bot',
 			value: 'evolution-bot',
 		},

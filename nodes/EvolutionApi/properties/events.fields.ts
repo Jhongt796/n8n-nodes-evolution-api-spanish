@@ -39,13 +39,12 @@ export const eventsFields: INodeProperties[] = [
 				operation: ['webhook'],
 			},
 		},
-	},
-	{
+	},	{
 		displayName: 'Activar Webhook',
 		name: 'enabled',
 		type: 'boolean',
 		default: true,
-		description: 'Define si se habilita o deshabilita la integración con Webhook',
+		description: 'Whether to enable or disable the Webhook integration',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -67,14 +66,12 @@ export const eventsFields: INodeProperties[] = [
 				resourceForWebhook: ['setWebhook'],
 			},
 		},
-	},
-	{
+	},	{
 		displayName: 'Webhook Por Eventos',
 		name: 'webhookByEvents',
 		type: 'boolean',
-		default: false,
-		description:
-			'Define si se crea una ruta para cada evento anexando el nombre del evento al final de la URL',
+		default: false,		description:
+			'Whether to create a route for each event by appending the event name at the end of the URL',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -82,13 +79,12 @@ export const eventsFields: INodeProperties[] = [
 				resourceForWebhook: ['setWebhook'],
 			},
 		},
-	},
-	{
+	},	{
 		displayName: 'Base64 En Webhook',
 		name: 'webhookBase64',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se envían los datos multimedia en formato base64 en el webhook',
+		description: 'Whether to send multimedia data in base64 format in the webhook',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -242,13 +238,12 @@ export const eventsFields: INodeProperties[] = [
 				operation: ['rabbitmq'],
 			},
 		},
-	},
-	{
+	},	{
 		displayName: 'Activar RabbitMQ',
 		name: 'enabled',
 		type: 'boolean',
 		default: true,
-		description: 'Define si se habilita o deshabilita la integración con RabbitMQ',
+		description: 'Whether to enable or disable the RabbitMQ integration',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],

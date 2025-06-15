@@ -11,14 +11,12 @@ export const instancesOperationsOptions: INodeProperties = {
 			resource: ['instances-api'], // Value do Resource
 		},
 	},
-
 	// Opciones que se vincularán a la Operación "Instancia"
-	options: [
-		// Opção = Criar instancia
+	options: [		// Opção = Criar instancia
 		{
 			// Create Instance Basic
 			name: 'Crear Instancia',
-			action: 'Crear Instancia',
+			action: 'Crear instancia',
 			description: 'Crea una nueva Instancia',
 			value: 'instance-basic',
 		},
@@ -27,7 +25,7 @@ export const instancesOperationsOptions: INodeProperties = {
 		{
 			// Instance Connect
 			name: 'Conectar Instancia',
-			action: 'Conectar Instancia',
+			action: 'Conectar instancia',
 			description: 'Genera la conexión de una Instancia (QR o Base64)',
 			value: 'instance-connect',
 		},
@@ -36,7 +34,7 @@ export const instancesOperationsOptions: INodeProperties = {
 		{
 			// Fetch Instances
 			name: 'Buscar Instancia',
-			action: 'Buscar Instancia',
+			action: 'Buscar instancia',
 			description: 'Busca y lista las Instancias creadas',
 			value: 'fetch-instances',
 		},
@@ -44,7 +42,7 @@ export const instancesOperationsOptions: INodeProperties = {
 		// Opção = Definir Comportamento da instancia
 		{
 			name: 'Definir Comportamento',
-			action: 'Definir Comportamento',
+			action: 'Definir comportamiento',
 			description: 'Define el comportamiento de la instancia',
 			value: 'instance-settings',
 		},
@@ -56,9 +54,7 @@ export const instancesOperationsOptions: INodeProperties = {
 			action: 'Definir presencia',
 			description: 'Define la presencia en la instancia',
 			value: 'set-presence',
-		},
-
-		// Opção = Definit Proxy
+		},		// Opção = Definit Proxy
 		{
 			// Set/find Proxy
 			name: 'Definir/Buscar Proxy',
@@ -71,7 +67,7 @@ export const instancesOperationsOptions: INodeProperties = {
 		{
 			// Restart Instance
 			name: 'Reiniciar Instancia',
-			action: 'Reiniciar Instancia',
+			action: 'Reiniciar instancia',
 			description: 'Reinicia el socket de la Instancia',
 			value: 'restart-instance',
 		},
@@ -80,7 +76,7 @@ export const instancesOperationsOptions: INodeProperties = {
 		{
 			// Logout Instance
 			name: 'Desconectar Instancia',
-			action: 'Desconectar Instancia',
+			action: 'Desconectar instancia',
 			description: 'Desconecta WhatsApp de la Instancia',
 			value: 'logout-instance',
 		},
@@ -89,7 +85,7 @@ export const instancesOperationsOptions: INodeProperties = {
 		{
 			// Delete Instance
 			name: 'Eliminar Instancia',
-			action: 'Eliminar Instancia',
+			action: 'Eliminar instancia',
 			description: 'Elimina una Instancia',
 			value: 'delete-instance',
 		},

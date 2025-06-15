@@ -10,8 +10,7 @@ export const eventsOperationsOptions: INodeProperties = {
 		show: {
 			resource: ['events-api'], // Value do Resource
 		},
-	},
-	options: [
+	},	options: [
 		// Opção = Enviar mensagem de Texto
 		{
 			// Set/find Webhook
@@ -19,11 +18,10 @@ export const eventsOperationsOptions: INodeProperties = {
 			action: 'Webhook',
 			description: 'Define/Busca integración con Webhook',
 			value: 'webhook',
-		},
-		{
+		},		{
 			// Set/find Rabbitmq
 			name: 'RabbitMQ',
-			action: 'RabbitMQ',
+			action: 'Rabbit mq',
 			description: 'Define/Busca integración con RabbitMQ',
 			value: 'rabbitmq',
 		},

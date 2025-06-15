@@ -10,28 +10,27 @@ export const chatOperations: INodeProperties = {
 			resource: ['chat-api'],
 		},
 	},
-	options: [
-		{
+	options: [		{
 			name: 'Verificar Número',
-			action: 'Verificar número en WhatsApp',
+			action: 'Verificar n mero en whats app',
 			description: 'Verifica si un número está registrado en WhatsApp',
 			value: 'check-number',
 		},
 		{
 			name: 'Leer Mensajes',
-			action: 'Marcar mensajes como leídos',
+			action: 'Marcar mensajes como le dos',
 			description: 'Marca mensajes específicos como leídos',
 			value: 'read-messages',
 		},
 		{
 			name: 'Gestionar Archivo',
-			action: 'Gestionar archivo de conversación',
+			action: 'Gestionar archivo de conversaci n',
 			description: 'Archiva o desarchiva una conversación',
 			value: 'manage-archive',
 		},
 		{
 			name: 'Marcar Como No Leído',
-			action: 'Marcar conversación como no leída',
+			action: 'Marcar conversaci n como no le da',
 			description: 'Marca una conversación específica como no leída',
 			value: 'mark-unread',
 		},
@@ -46,10 +45,9 @@ export const chatOperations: INodeProperties = {
 			action: 'Buscar foto de perfil',
 			description: 'Obtiene la URL de la foto de perfil de un contacto',
 			value: 'fetch-profile-picture',
-		},
-		{
+		},		{
 			name: 'Obtener Multimedia En Base64',
-			action: 'Obtener multimedia en Base64',
+			action: 'Obtener multimedia en base64',
 			description: 'Obtiene el contenido de un medio en formato Base64',
 			value: 'get-media-base64',
 		},

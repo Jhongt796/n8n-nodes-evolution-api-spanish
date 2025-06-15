@@ -16,8 +16,7 @@ export const groupsOperations: INodeProperties = {
 			action: 'Crear un nuevo grupo',
 			description: 'Crea un nuevo grupo en WhatsApp',
 			value: 'create-group',
-		},
-		{
+		},		{
 			name: 'Actualizar Imagen Del Grupo',
 			action: 'Actualizar imagen del grupo',
 			description: 'Actualiza la imagen de perfil del grupo',
@@ -28,10 +27,9 @@ export const groupsOperations: INodeProperties = {
 			action: 'Actualizar nombre del grupo',
 			description: 'Actualiza el nombre/título del grupo',
 			value: 'update-group-name',
-		},
-		{
+		},		{
 			name: 'Actualizar Descripción Del Grupo',
-			action: 'Actualizar descripción del grupo',
+			action: 'Actualizar descripci n del grupo',
 			description: 'Actualiza la descripción del grupo',
 			value: 'update-group-description',
 		},
@@ -46,22 +44,21 @@ export const groupsOperations: INodeProperties = {
 			action: 'Actualizar miembros del grupo',
 			description: 'Añade, elimina o actualiza permisos de miembros',
 			value: 'update-participants',
-		},
-		{
+		},		{
 			name: 'Buscar Enlace De Invitación',
-			action: 'Buscar enlace de invitación',
+			action: 'Buscar enlace de invitaci n',
 			description: 'Obtiene el enlace de invitación del grupo',
 			value: 'fetch-invite-code',
 		},
 		{
 			name: 'Revocar Enlace De Invitación',
-			action: 'Revocar enlace de invitación',
+			action: 'Revocar enlace de invitaci n',
 			description: 'Revoca el enlace de invitación actual del grupo',
 			value: 'revoke-invite-code',
 		},
 		{
 			name: 'Enviar Enlace De Invitación',
-			action: 'Enviar enlace de invitación',
+			action: 'Enviar enlace de invitaci n',
 			description: 'Envía el enlace de invitación del grupo a contactos',
 			value: 'send-invite-link',
 		},

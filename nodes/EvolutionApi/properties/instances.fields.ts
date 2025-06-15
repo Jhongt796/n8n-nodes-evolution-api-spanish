@@ -92,34 +92,33 @@ export const instancesFields: INodeProperties[] = [
 								type: 'string',
 								default: '',
 								description: 'Introduce el enlace de Chatwoot',
-							},
-							{
+							},							{
 								displayName: 'Firma Del Agente De Chatwoot',
 								name: 'chatwootSignMsg',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se habilita o deshabilita la firma del agente de Chatwoot',
+								description: 'Whether to enable or disable the Chatwoot agent signature',
 							},
 							{
 								displayName: 'Reabrir Mensajes En Chatwoot',
 								name: 'chatwootReopenConversation',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se habilita o deshabilita la reapertura de mensajes en Chatwoot',
+								description: 'Whether to enable or disable reopening messages in Chatwoot',
 							},
 							{
 								displayName: 'Iniciar Conversaciones Como Pendientes En Chatwoot',
 								name: 'chatwootConversationPending',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se inician las conversaciones como pendientes en Chatwoot',
+								description: 'Whether to start conversations as pending in Chatwoot',
 							},
 							{
 								displayName: 'Importar Contactos Para Chatwoot',
 								name: 'chatwootImportContacts',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se importan los contactos a Chatwoot',
+								description: 'Whether to import contacts to Chatwoot',
 							},
 							{
 								displayName: 'Nombre De La Bandeja De Entrada De Chatwoot',
@@ -132,15 +131,14 @@ export const instancesFields: INodeProperties[] = [
 								displayName: 'Unir Contactos Brasileños En Chatwoot',
 								name: 'chatwootMergeBrazilContacts',
 								type: 'boolean',
-								default: false,
-								description: 'Define si se unen los contactos brasileños en Chatwoot',
+								default: false,								description: 'Whether to merge Brazilian contacts in Chatwoot',
 							},
 							{
 								displayName: 'Importar Mensajes Para Chatwoot',
 								name: 'chatwootImportMessages',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se importan los mensajes a Chatwoot',
+								description: 'Whether to import messages to Chatwoot',
 							},
 							{
 								displayName: 'Importar Mensajes De Cuántos Días Para Chatwoot',
@@ -188,7 +186,7 @@ export const instancesFields: INodeProperties[] = [
 								name: 'rejectCall',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se rechazan automáticamente las llamadas entrantes',
+								description: 'Whether to automatically reject incoming calls',
 							},
 							{
 								displayName: 'Mensaje Al Rechazar',
@@ -203,35 +201,35 @@ export const instancesFields: INodeProperties[] = [
 								name: 'groupsIgnore',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se ignoran los mensajes de los grupos',
+								description: 'Whether to ignore messages from groups',
 							},
 							{
 								displayName: 'Siempre En Línea',
 								name: 'alwaysOnline',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se mantiene el estado siempre como En Línea',
+								description: 'Whether to keep the status always as Online',
 							},
 							{
 								displayName: 'Leer Mensajes',
 								name: 'readMessages',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se marcan automáticamente los mensajes como leídos',
+								description: 'Whether to automatically mark messages as read',
 							},
 							{
 								displayName: 'Leer Estados',
 								name: 'readStatus',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se permite a la API ver el Estado de los contactos agregados',
+								description: 'Whether to allow the API to see the Status of added contacts',
 							},
 							{
 								displayName: 'Sincronizar Historial',
 								name: 'syncFullHistory',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se sincroniza el historial completo de mensajes con la API',
+								description: 'Whether to sync the complete message history with the API',
 							},
 						],
 					},
@@ -322,7 +320,7 @@ export const instancesFields: INodeProperties[] = [
 								name: 'rabbitmqEnabled',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se envían datos multimedia en formato base64 en RabbitMQ',
+								description: 'Whether to send multimedia data in base64 format in RabbitMQ',
 							},
 							{
 								displayName: 'Eventos',
@@ -453,16 +451,15 @@ export const instancesFields: INodeProperties[] = [
 								displayName: 'Webhook Por Eventos',
 								name: 'webhookByEvents',
 								type: 'boolean',
-								default: false,
-								description:
-									'Define si se crea una ruta para cada evento anexando el nombre del evento al final de la URL',
+								default: false,								description:
+									'Whether to create a route for each event by appending the event name at the end of the URL',
 							},
 							{
 								displayName: 'Base64 En Webhook',
 								name: 'webhookBase64',
 								type: 'boolean',
 								default: false,
-								description: 'Define si se envían datos multimedia en formato base64 en el webhook',
+								description: 'Whether to send multimedia data in base64 format in the webhook',
 							},
 							{
 								displayName: 'Eventos',
@@ -630,7 +627,7 @@ export const instancesFields: INodeProperties[] = [
 		name: 'rejectCall',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se rechazan las llamadas o no',
+		description: 'Whether to reject calls or not',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -657,7 +654,7 @@ export const instancesFields: INodeProperties[] = [
 		name: 'groupsIgnore',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se ignoran los mensajes de grupos',
+		description: 'Whether to ignore messages from groups',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -670,7 +667,7 @@ export const instancesFields: INodeProperties[] = [
 		name: 'alwaysOnline',
 		type: 'boolean',
 		default: false,
-		description: 'Define si la instancia debe estar siempre en línea o no',
+		description: 'Whether the instance should always be online or not',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -683,7 +680,7 @@ export const instancesFields: INodeProperties[] = [
 		name: 'readMessages',
 		type: 'boolean',
 		default: false,
-		description: 'Define si los mensajes se marcan como leídos automáticamente',
+		description: 'Whether messages are marked as read automatically',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -696,7 +693,7 @@ export const instancesFields: INodeProperties[] = [
 		name: 'syncFullHistory',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se sincroniza todo el historial o no',
+		description: 'Whether to sync all history or not',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -709,7 +706,7 @@ export const instancesFields: INodeProperties[] = [
 		name: 'readStatus',
 		type: 'boolean',
 		default: false,
-		description: 'Define si se leen los estados de los contactos',
+		description: 'Whether to read the status of contacts',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -743,7 +740,7 @@ export const instancesFields: INodeProperties[] = [
 				value: 'available',
 			},
 			{
-				name: 'No disponible',
+				name: 'No Disponible',
 				value: 'unavailable',
 			},
 		],
@@ -802,7 +799,7 @@ export const instancesFields: INodeProperties[] = [
 		name: 'enabled',
 		type: 'boolean',
 		default: true,
-		description: 'Define si se habilita o deshabilita la integración con el proxy',
+		description: 'Whether to enable or disable the proxy integration',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],

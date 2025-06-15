@@ -10,13 +10,11 @@ export const messagesOperationsOptions: INodeProperties = {
 		show: {
 			resource: ['messages-api'], // Value do Resource
 		},
-	},
-	options: [
-		// Opção = Enviar mensagem de Texto
+	},	options: [		// Opção = Enviar mensagem de Texto
 		{
 			// Send Text
 			name: 'Enviar Texto',
-			action: 'Enviar Texto',
+			action: 'Enviar texto',
 			description: 'Envía mensaje de Texto',
 			value: 'send-text',
 		},
@@ -25,7 +23,7 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Media
 			name: 'Enviar Imagem',
-			action: 'Enviar Imagen',
+			action: 'Enviar imagen',
 			description: 'Envía mensaje de Imagen',
 			value: 'send-image',
 		},
@@ -34,7 +32,7 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Media
 			name: 'Enviar Video',
-			action: 'Enviar Video',
+			action: 'Enviar video',
 			description: 'Envía mensaje de Video',
 			value: 'send-video',
 		},
@@ -43,7 +41,7 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Narrated Audio
 			name: 'Enviar Audio',
-			action: 'Enviar Audio',
+			action: 'Enviar audio',
 			description: 'Envía mensaje de Audio',
 			value: 'send-audio',
 		},
@@ -52,7 +50,7 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Media
 			name: 'Enviar Documento',
-			action: 'Enviar Documento',
+			action: 'Enviar documento',
 			description: 'Envía mensaje con Documento',
 			value: 'send-document',
 		},
@@ -61,7 +59,7 @@ export const messagesOperationsOptions: INodeProperties = {
 		{
 			// Send Poll
 			name: 'Enviar Enquete',
-			action: 'Enviar Encuesta',
+			action: 'Enviar encuesta',
 			description: 'Envía una Encuesta de hasta 12 opciones',
 			value: 'send-poll',
 		},
@@ -69,7 +67,7 @@ export const messagesOperationsOptions: INodeProperties = {
 		// Opção = Enviar Contato
 		{
 			name: 'Enviar Contato',
-			action: 'Enviar Contacto',
+			action: 'Enviar contacto',
 			description: 'Envía un contacto en WhatsApp',
 			value: 'send-contact',
 		},
@@ -77,7 +75,7 @@ export const messagesOperationsOptions: INodeProperties = {
 		// Opção = Enviar Lista
 		{
 			name: 'Enviar Lista',
-			action: 'Enviar Lista',
+			action: 'Enviar lista',
 			description: 'Envía una lista de opciones interactiva',
 			value: 'send-list',
 		},
@@ -101,7 +99,7 @@ export const messagesOperationsOptions: INodeProperties = {
 		// Opção = Enviar Status
 		{
 			name: 'Enviar Estado',
-			action: 'Enviar Estado',
+			action: 'Enviar estado',
 			description: 'Publicar un Estado/Historia',
 			value: 'send-stories',
 		},
@@ -109,7 +107,7 @@ export const messagesOperationsOptions: INodeProperties = {
 		// Opção = Reagir Mensagem
 		{
 			name: 'Reaccionar Mensaje',
-			action: 'Reaccionar Mensaje',
+			action: 'Reaccionar mensaje',
 			description: 'Añade una reacción a un mensaje',
 			value: 'send-reaction',
 		},
