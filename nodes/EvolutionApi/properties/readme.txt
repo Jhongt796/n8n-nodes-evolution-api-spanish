@@ -1,6 +1,6 @@
-Observação deste documento:
-Este documento serve para a Definição de Operações que devem aparecer
-em cada Resource, incluindo a criação de novos campos para cada Operation
+Observación de este documento:
+Este documento sirve para la Definición de Operaciones que deben aparecer
+en cada Recurso, incluyendo la creación de nuevos campos para cada Operación
 
  ██████╗ ██████╗ ███████╗██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
 ██╔═══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
@@ -9,17 +9,17 @@ em cada Resource, incluindo a criação de novos campos para cada Operation
 ╚██████╔╝██║     ███████╗██║  ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
  ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
 
-Operation = Funções/Opções de cada Resource (Instancia, Mensagens, Integração, Conversa, Perfil e Grupo)
+Operación = Funciones/Opciones de cada Recurso (Instancia, Mensajes, Integración, Conversación, Perfil y Grupo)
 
-"O que cada Resource vai apresentar ao ser selecionado"
+"Lo que cada Recurso presentará al ser seleccionado"
 
-Exemplo:
+Ejemplo:
 Instancias:
-  • Criar instncia;
-  • Criar instancia com proxy;
+  • Crear instancia;
+  • Crear instancia con proxy;
   • Conectar instancia;
 
-Cada Resource adicionada tera um desse para listar as opções/funções de cada Resource
+Cada Recurso añadido tendrá uno de estos para listar las opciones/funciones de cada Recurso
 
 
 
@@ -31,13 +31,12 @@ Cada Resource adicionada tera um desse para listar as opções/funções de cada
 	███████╗███████╗███████╗██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ███████║
 	╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝
 
-Elements = Os campos que aparecem em cada Operation
+Elementos = Los campos que aparecen en cada Operación
 
-"Cada Operation (ex: Enviar mensagem de Texto) tem campos que precisam ser preenchido para fazer uma requisição"
+"Cada Operación (ej: Enviar mensaje de Texto) tiene campos que necesitan ser completados para hacer una solicitud"
 
-Exemplo:
-Enviar Mensagem de Texto:
-  • Instancia que vai enviar;
-  • RemoteJid do destinatario;
-  • Mensagem que vai ser enviada;
-
+Ejemplo:
+Enviar Mensaje de Texto:
+  • Instancia que va a enviar;
+  • RemoteJid del destinatario;
+  • Mensaje que va a ser enviado;

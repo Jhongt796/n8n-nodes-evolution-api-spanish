@@ -29,7 +29,7 @@ export async function findParticipants(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao buscar participantes do grupo',
+                details: 'Error al buscar participantes del grupo',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

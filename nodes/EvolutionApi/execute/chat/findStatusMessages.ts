@@ -43,7 +43,7 @@ export async function findStatusMessages(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao buscar status das mensagens',
+                details: 'Error al buscar el estado de los mensajes',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

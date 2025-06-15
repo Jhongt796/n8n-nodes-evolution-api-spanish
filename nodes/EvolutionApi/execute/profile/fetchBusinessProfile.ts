@@ -34,7 +34,7 @@ export async function fetchBusinessProfile(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao buscar perfil de negócio',
+                details: 'Error al buscar perfil de negocio',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

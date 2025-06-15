@@ -34,7 +34,7 @@ export async function updateProfileName(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao atualizar nome do perfil',
+                details: 'Error al actualizar el nombre del perfil',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

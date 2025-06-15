@@ -8,20 +8,20 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendReaction(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Parámetros obligatorios
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
 		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 		const messageId = ef.getNodeParameter('messageId', 0) as string;
 		const fromMe = ef.getNodeParameter('fromMe', 0) as boolean;
 		const reaction = ef.getNodeParameter('reaction', 0) as string;
 
-		// Validação da reação
+		// Validación de la reacción
 		if (!reaction) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Reação inválida',
-					details: 'É necessário fornecer um emoji para a reação',
+					message: 'Reacción inválida',
+					details: 'Es necesario proporcionar un emoji para la reacción',
 					code: 'INVALID_REACTION',
 					timestamp: new Date().toISOString(),
 				},
@@ -63,10 +63,10 @@ export async function sendReaction(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar reação',
+					? 'Parámetros inválidos o ausentes'
+					: 'Error al enviar reacción',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Verifica si todos los campos obligatorios se completaron correctamente'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

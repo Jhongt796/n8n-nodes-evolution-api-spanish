@@ -1,12 +1,12 @@
 ![image](https://github.com/user-attachments/assets/813b7b34-377c-42e8-9f1a-12e27e682c7f)
 
 <p align="center"><br>
-Este Community Nodes é uma solução 100% gratuita, criada com o intuito de simplificar e auxiliar toda a comunidade a integrar e utilizar ao máximo os principais recursos oferecidos pela <b>Evolution API v2.2+</b> em seus projetos no N8N. <b>Desenvolvido por OrionDesign.</b>
+Estos Nodos Comunitarios son una solución 100% gratuita, creada con el intuito de simplificar y ayudar a toda la comunidad a integrar y utilizar al máximo los principales recursos ofrecidos por la <b>API Evolution v2.2+</b> en sus proyectos en N8N. <b>Desarrollado por OrionDesign.</b>
 </p>
 <br>
 	
 <div align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2Fn8n-nodes-evolution-api&query=downloads&style=for-the-badge&label=Total%20de%20Downloads&labelColor=%230d1117&color=%23359514&cacheSeconds=30&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fn8n-nodes-evolution-api" alt="Dynamic JSON Badge">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2Fn8n-nodes-evolution-api&query=downloads&style=for-the-badge&label=Total%20de%20Descargas&labelColor=%230d1117&color=%23359514&cacheSeconds=30&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fn8n-nodes-evolution-api" alt="Dynamic JSON Badge">
 </div>
 <br>
 </p>
@@ -21,33 +21,33 @@ Este Community Nodes é uma solução 100% gratuita, criada com o intuito de sim
 
 <h3>⚙️ Requisitos</h3>
 
-Para utilizar o nosso **Community Node**, é necessário atender aos seguintes requisitos:  
-- **N8N** na versão **1.54.4** ou superior  
-- **Evolution API** na versão **2.2.0** ou superior  
+Para utilizar nuestro **Nodo Comunitario**, es necesario cumplir con los siguientes requisitos:
+- **N8N** en la versión **1.54.4** o superior
+- **API Evolution** en la versión **2.2.0** o superior
 
 <h1></h1>
 
-<h3>📌 Recursos Disponíveis</h3>
+<h3>📌 Recursos Disponibles</h3>
 
-<h3>Instância</h3>
-🖥️ Este recurso oferece acesso completo às principais funcionalidades relacionadas às instâncias da Evolution API. Ele permite realizar operações essenciais, como criar novas instâncias, conectar-se a elas, obter informações detalhadas, personalizar comportamentos, monitorar presença, reiniciar e até mesmo excluir instâncias de forma prática e eficiente.
+<h3>Instancia</h3>
+🖥️ Este recurso ofrece acceso completo a las principales funcionalidades relacionadas con las instancias de API Evolution. Permite realizar operaciones esenciales, como crear nuevas instancias, conectarse a ellas, obtener información detallada, personalizar comportamientos, monitorear presencia, reiniciar e incluso eliminar instancias de forma práctica y eficiente.
 <br>
 <details>
-  <summary><b>Lista de operações</b></summary>
+  <summary><b>Lista de operaciones</b></summary>
 	<details>
-  	<summary>   ✅ <b> Criar Instancia</b></summary>
+	<summary>   ✅ <b> Crear Instancia</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Gerar Qr-Code</b></summary>
+	<summary>   ✅ <b> Generar Código QR</b></summary>
 	</details>
 	<details>
   	<summary>   ✅ <b> Buscar Instancia</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Definir Comportamento</b></summary>
+	<summary>   ✅ <b> Definir Comportamiento</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Definir Presença</b></summary>
+	<summary>   ✅ <b> Definir Presencia</b></summary>
 	</details>
 	<details>
   	<summary>   ✅ <b> Definir Proxy</b></summary>
@@ -59,20 +59,20 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
   	<summary>   ✅ <b> Desconectar WhatsApp</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Deletar Instancia</b></summary>
+	<summary>   ✅ <b> Eliminar Instancia</b></summary>
 	</details>
 </details>
 
-<h3> Mensagem</h3>
-✉️ Este recurso concentra todas as funcionalidades relacionadas ao envio e gerenciamento de mensagens através da Evolution API. Com ele, você pode enviar diversos tipos de conteúdo como textos, imagens, vídeos, áudios, documentos, contatos, listas interativas, botões e até mesmo mensagens PIX. Cada tipo de mensagem possui opções avançadas como delay, mentions, replies e formatações especiais. O recurso foi desenvolvido para proporcionar uma experiência completa de comunicação, permitindo explorar ao máximo os recursos nativos do WhatsApp de forma simples e eficiente.
+<h3> Mensaje</h3>
+✉️ Este recurso concentra todas las funcionalidades relacionadas con el envío y gestión de mensajes a través de API Evolution. Con él, puedes enviar diversos tipos de contenido como textos, imágenes, videos, audios, documentos, contactos, listas interactivas, botones e incluso mensajes PIX. Cada tipo de mensaje posee opciones avanzadas como delay, mentions, replies y formatos especiales. El recurso fue desarrollado para proporcionar una experiencia completa de comunicación, permitiendo explorar al máximo los recursos nativos de WhatsApp de forma simple y eficiente.
 <br>
 <details>
-  <summary><b>Lista de operações</b></summary>
+  <summary><b>Lista de operaciones</b></summary>
 	<details>
   	<summary>   ✅ <b> Enviar Texto</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Enviar Imagem</b></summary>
+	<summary>   ✅ <b> Enviar Imagen</b></summary>
 	</details>
 	<details>
   	<summary>   ✅ <b> Enviar Video</b></summary>
@@ -84,128 +84,128 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
   	<summary>   ✅ <b> Enviar Documento</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Enviar Enquete</b></summary>
+	<summary>   ✅ <b> Enviar Encuesta</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Enviar Contato</b></summary>
+	<summary>   ✅ <b> Enviar Contacto</b></summary>
 	</details>
 	<details>
   	<summary>   ✅ <b> Enviar Lista</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Enviar Botão</b></summary>
+	<summary>   ✅ <b> Enviar Botón</b></summary>
 	</details>
 	<details>
   	<summary>   ✅ <b> Enviar Pix</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Enviar Status</b></summary>
+	<summary>   ✅ <b> Enviar Estado</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Reagir a Mensagem</b></summary>
+	<summary>   ✅ <b> Reaccionar al Mensaje</b></summary>
 	</details>
 </details>
 
 <h3>Grupo</h3>
-👥 Com este recurso, você conta com um conjunto completo de funcionalidades para gerenciamento de grupos no WhatsApp por meio da Evolution API. Ele abrange desde a criação e administração de grupos até o gerenciamento de participantes, configuração de permissões, links de convite e mensagens temporárias. Tudo foi projetado para oferecer controle eficiente e simplificado na administração de grupos.
+👥 Con este recurso, cuentas con un conjunto completo de funcionalidades para la gestión de grupos en WhatsApp por medio de API Evolution. Abarca desde la creación y administración de grupos hasta la gestión de participantes, configuración de permisos, enlaces de invitación y mensajes temporales. Todo fue diseñado para ofrecer control eficiente y simplificado en la administración de grupos.
 <br>
 <details>
-  <summary><b>Lista de operações</b></summary>
+  <summary><b>Lista de operaciones</b></summary>
 	<details>
-  	<summary>   ✅ <b> Criar Grupo</b></summary>
+	<summary>   ✅ <b> Crear Grupo</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Atualizar Imagem do Grupo</b></summary>
+	<summary>   ✅ <b> Actualizar Imagen del Grupo</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Atualizar Nome do Grupo</b></summary>
+	<summary>   ✅ <b> Actualizar Nombre del Grupo</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Atualizar Descrição do Grupo</b></summary>
+	<summary>   ✅ <b> Actualizar Descripción del Grupo</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Atualizar Configurações do Grupo</b></summary>
+	<summary>   ✅ <b> Actualizar Configuraciones del Grupo</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Atualizar Membros</b></summary>
+	<summary>   ✅ <b> Actualizar Miembros</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Buscar Link de convite do Grupo</b></summary>
+	<summary>   ✅ <b> Buscar Enlace de Invitación del Grupo</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Revogar Link de convite do Grupo</b></summary>
+	<summary>   ✅ <b> Revocar Enlace de Invitación del Grupo</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Enviar Link de Convite do Grupo</b></summary>
+	<summary>   ✅ <b> Enviar Enlace de Invitación del Grupo</b></summary>
 	</details>
 	<details>
   	<summary>   ✅ <b> Encontrar Participantes</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Mensagens Temporarias</b></summary>
+	<summary>   ✅ <b> Mensajes Temporales</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Sair do Grupo</b></summary>
+	<summary>   ✅ <b> Salir del Grupo</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Entrar no Grupo</b></summary>
+	<summary>   ✅ <b> Unirse al Grupo</b></summary>
 	</details>
 </details>
 
 <h3>Chat</h3>
-💬 Este recurso disponibiliza um conjunto abrangente de ferramentas para o gerenciamento de conversas e interações utilizando a Evolution API. Com ele, é possível verificar números, enviar e gerenciar mensagens, manipular arquivos de mídia, controlar status de leitura, administrar contatos e monitorar presença. Todas as operações são desenvolvidas para proporcionar um controle completo e eficiente das comunicações, facilitando a gestão tanto de conversas individuais quanto em grupo.
+💬 Este recurso disponibiliza un conjunto completo de herramientas para la gestión de conversaciones e interacciones utilizando API Evolution. Con él, es posible verificar números, enviar y gestionar mensajes, manipular archivos multimedia, controlar estados de lectura, administrar contactos y monitorear presencia. Todas las operaciones son desarrolladas para proporcionar un control completo y eficiente de las comunicaciones, facilitando la gestión tanto de conversaciones individuales como en grupo.
 <br>
 <details>
-  <summary><b>Lista de operações</b></summary>
+  <summary><b>Lista de operaciones</b></summary>
 	<details>
-  	<summary>   ✅ <b> Verificar Numero</b></summary>
+	<summary>   ✅ <b> Verificar Número</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Ler Mensagem</b></summary>
+	<summary>   ✅ <b> Leer Mensaje</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Gerenciar Arquivoo</b></summary>
+	<summary>   ✅ <b> Gestionar Archivo</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Marcar como Não lido</b></summary>
+	<summary>   ✅ <b> Marcar como No Leído</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Deletar Mensagem</b></summary>
+	<summary>   ✅ <b> Eliminar Mensaje</b></summary>
 	</details>
 	<details>
   	<summary>   ✅ <b> Buscar Foto de Perfil</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Obter Midia em Base64</b></summary>
+	<summary>   ✅ <b> Obtener Multimedia en Base64</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Editar Mensagem</b></summary>
+	<summary>   ✅ <b> Editar Mensaje</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Enviar Presença</b></summary>
+	<summary>   ✅ <b> Enviar Presencia</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Bloquear Contato</b></summary>
+	<summary>   ✅ <b> Bloquear Contacto</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Buscar Contatos</b></summary>
+	<summary>   ✅ <b> Buscar Contactos</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Procurar Mensagens</b></summary>
+	<summary>   ✅ <b> Buscar Mensajes</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Procurar Status</b></summary>
+	<summary>   ✅ <b> Buscar Estados</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Procurar Chats</b></summary>
+	<summary>   ✅ <b> Buscar Chats</b></summary>
 	</details>
 </details>
 
 <h3>Evento</h3>
-⚡ Este recurso oferece mecanismos avançados para integração e monitoramento em tempo real das atividades da Evolution API. Ele permite configurar e gerenciar Webhooks e RabbitMQ, possibilitando o acompanhamento de eventos como mensagens recebidas, alterações em grupos, status de conexão e muito mais. Essas funcionalidades foram projetadas para garantir uma comunicação ágil e automatizada entre sua aplicação e a API, promovendo respostas imediatas a diferentes eventos do WhatsApp.
+⚡ Este recurso ofrece mecanismos avanzados para integración y monitoreo en tiempo real de las actividades de API Evolution. Permite configurar y gestionar Webhooks y RabbitMQ, posibilitando el acompañamiento de eventos como mensajes recibidos, alteraciones en grupos, estados de conexión y mucho más. Estas funcionalidades fueron diseñadas para garantizar una comunicación ágil y automatizada entre su aplicación y la API, promoviendo respuestas inmediatas a diferentes eventos de WhatsApp.
 <br>
 <details>
-  <summary><b>Lista de operações</b></summary>
+  <summary><b>Lista de operaciones</b></summary>
 	<details>
   	<summary>   ✅ <b> Webhook</b></summary>
 	</details>
@@ -214,11 +214,11 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 	</details>
 </details>
 
-<h3>Integração</h3>
-🔗 Este recurso disponibiliza uma ampla gama de conectores para integrar a Evolution API a diversas plataformas e serviços externos. Entre as possibilidades estão conexões com Chatwoot para atendimento ao cliente, Evolution Bot para automações, Typebot para fluxos conversacionais, além de integrações com Flowise e Dify para soluções de inteligência artificial. Essas integrações ampliam as capacidades da API, permitindo criar soluções robustas e automatizadas para diferentes cenários de negócios.
+<h3>Integración</h3>
+🔗 Este recurso disponibiliza una amplia gama de conectores para integrar API Evolution a diversas plataformas y servicios externos. Entre las posibilidades están conexiones con Chatwoot para atención al cliente, Evolution Bot para automaciones, Typebot para flujos conversacionales, además de integraciones con Flowise y Dify para soluciones de inteligencia artificial. Estas integraciones amplían las capacidades de la API, permitiendo crear soluciones robustas y automatizadas para diferentes escenarios de negocios.
 <br>
 <details>
-  <summary><b>Lista de operações</b></summary>
+  <summary><b>Lista de operaciones</b></summary>
 	<details>
   	<summary>   ✅ <b> Chatwoot</b></summary>
 	</details>
@@ -232,23 +232,23 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
   	<summary>   ✅ <b> Dify</b></summary>
 	</details>
 	<details>
-  	<summary>   ✅ <b> Floise</b></summary>
+	<summary>   ✅ <b> Flowise</b></summary>
 	</details>
 </details>
 
 <h1></h1>
 
-<h3>🤝 Contribuição</h3>
+<h3>🤝 Contribución</h3>
 
-Contribua para o crescimento deste projeto! Você pode ajudar de diversas formas:  
-- **Pull Requests**: Envie melhorias, correções ou novas funcionalidades.  
-- **Issues**: Relate problemas ou sugira novas ideias.  
-- **Sugestões**: Compartilhe suas opiniões e feedbacks.  
-- **Documentação**: Ajude a melhorar ou expandir a documentação existente.  
+¡Contribuye al crecimiento de este proyecto! Puedes ayudar de diversas formas:
+- **Pull Requests**: Envía mejoras, correcciones o nuevas funcionalidades.
+- **Issues**: Reporta problemas o sugiere nuevas ideas.
+- **Sugerencias**: Comparte tus opiniones y feedbacks.
+- **Documentación**: Ayuda a mejorar o expandir la documentación existente.
 
 <h1></h1>
 
-<h3>📌 Principais contribuidores</h3>
+<h3>📌 Principales contribuyentes</h3>
 <a align="center" href="https://github.com/oriondesign2015/n8n-nodes-evolution-api/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=oriondesign2015/n8n-nodes-evolution-api" />
 </a>
@@ -264,5 +264,5 @@ Contribua para o crescimento deste projeto! Você pode ajudar de diversas formas
 
 <h1></h1>
 <p align="center">
-Desenvolvido com ❤️ por OrionDesign
+Desarrollado con ❤️ por OrionDesign
 </p>

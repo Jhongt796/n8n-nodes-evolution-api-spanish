@@ -24,7 +24,7 @@ const resourcesOptions: INodeProperties = {
 			value: 'instances-api',
 		},
 		{
-			name: 'Mensagem',
+			name: 'Mensaje',
 			value: 'messages-api',
 		},
 		{
@@ -44,7 +44,7 @@ const resourcesOptions: INodeProperties = {
 			value: 'events-api',
 		},
 		{
-			name: 'Integração',
+			name: 'Integración',
 			value: 'integrations-api',
 		},
 	],
@@ -53,21 +53,21 @@ const resourcesOptions: INodeProperties = {
 
 export const evolutionNodeProperties = [
 	resourcesOptions,
-	// Funções disponíveis quando selecionado o recurso "Instancias"
+	// Funciones disponibles cuando se selecciona el recurso "Instancia"
 	instancesOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Mensagens"
+	// Funciones disponibles cuando se selecciona el recurso "Mensaje"
 	messagesOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Grupos"
+	// Funciones disponibles cuando se selecciona el recurso "Grupo"
 	groupsOperations,
-	// Funções disponíveis quando selecionado o recurso "Eventos"
+	// Funciones disponibles cuando se selecciona el recurso "Evento"
 	eventsOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Integrações"
+	// Funciones disponibles cuando se selecciona el recurso "Integración"
 	integrationsOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Perfil"
+	// Funciones disponibles cuando se selecciona el recurso "Perfil"
 	profileOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Chat"
+	// Funciones disponibles cuando se selecciona el recurso "Chat"
 	chatOperations,
-	// Campos disponíveis quando selecionado o recurso e alguma operação
+	// Campos disponibles cuando se selecciona el recurso y alguna operación
 	...instancesFields,
 	...messagesFields,
 	...groupsFields,

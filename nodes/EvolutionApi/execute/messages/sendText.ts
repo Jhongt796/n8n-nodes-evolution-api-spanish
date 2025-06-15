@@ -86,11 +86,11 @@ export async function sendText(ef: IExecuteFunctions) {
 			});
 		} catch (error) {
 			const errorMessage = error.message.includes('Could not get parameter')
-				? 'Parâmetros inválidos ou ausentes'
-				: 'Erro ao enviar mensagem de texto';
+				? 'Parámetros inválidos o ausentes'
+				: 'Error al enviar mensaje de texto';
 
 			const errorDetails = error.message.includes('Could not get parameter')
-				? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+				? 'Verifica si todos los campos obligatorios se completaron correctamente'
 				: error.message;
 
 			if (!ef.continueOnFail()) {

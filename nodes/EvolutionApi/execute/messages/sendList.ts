@@ -8,7 +8,7 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendList(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Parámetros obligatorios
 		const instanceName = ef.getNodeParameter('instanceName', 0);
 		const remoteJid = ef.getNodeParameter('remoteJid', 0);
 		const title = ef.getNodeParameter('title', 0);
@@ -25,13 +25,13 @@ export async function sendList(ef: IExecuteFunctions) {
 			};
 		}[];
 
-		// Validação das seções
+		// Validación de las secciones
 		if (!Array.isArray(sections) || sections.length === 0) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Lista de seções inválida',
-					details: 'É necessário fornecer pelo menos uma seção com opções',
+					message: 'Lista de secciones inválida',
+					details: 'Es necesario proporcionar al menos una sección con opciones',
 					code: 'INVALID_SECTIONS',
 					timestamp: new Date().toISOString(),
 				},
@@ -42,7 +42,7 @@ export async function sendList(ef: IExecuteFunctions) {
 			};
 		}
 
-		// Opções adicionais
+		// Opciones adicionales
 		const options = ef.getNodeParameter('options_message', 0, {}) as {
 			footer?: string;
 			delay?: number;
@@ -122,10 +122,10 @@ export async function sendList(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar lista',
+					? 'Parámetros inválidos o ausentes'
+					: 'Error al enviar lista',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Verifica si todos los campos obligatorios se completaron correctamente'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

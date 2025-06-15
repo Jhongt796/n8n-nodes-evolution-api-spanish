@@ -9,20 +9,20 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendDocument(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Parámetros obligatorios
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
 		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 		const media = ef.getNodeParameter('media', 0) as string;
 
-		// Validação do campo media
+		// Validación del campo multimedia
 		if (!media.startsWith('http') && !media.startsWith('data:') && !isBase64(media)) {
 			throw new NodeApiError(ef.getNode(), {
-				message: 'Formato de mídia inválido',
-				description: 'O documento deve ser uma URL válida ou um base64',
+				message: 'Formato de multimedia inválido',
+				description: 'El documento debe ser una URL válida o un base64',
 			});
 		}
 
-		// Função auxiliar para verificar se é base64
+		// Función auxiliar para verificar si es base64
 		function isBase64(str: string) {
 			try {
 				return Buffer.from(str, 'base64').toString('base64') === str;
@@ -31,12 +31,12 @@ export async function sendDocument(ef: IExecuteFunctions) {
 			}
 		}
 
-		// Parâmetros opcionais com valores padrão
+		// Parámetros opcionales con valores predeterminados
 		const mimetype = (ef.getNodeParameter('mimetype', 0, 'application/pdf') as string) || 'application/pdf';
 		const caption = ef.getNodeParameter('caption', 0, '') as string;
 		const fileName = (ef.getNodeParameter('fileName', 0, 'document.pdf') as string) || 'document.pdf';
 
-		// Opções adicionais
+		// Opciones adicionales
 		const options = ef.getNodeParameter('options_message', 0, {}) as {
 			delay?: number;
 			quoted?: {
@@ -103,10 +103,10 @@ export async function sendDocument(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar documento',
+					? 'Parámetros inválidos o ausentes'
+					: 'Error al enviar documento',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Verifica si todos los campos obligatorios se completaron correctamente'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

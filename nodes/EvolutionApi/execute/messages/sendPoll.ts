@@ -8,7 +8,7 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendPoll(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Parámetros obligatorios
 		const instanceName = ef.getNodeParameter('instanceName', 0);
 		const remoteJid = ef.getNodeParameter('remoteJid', 0);
 		const pollTitle = ef.getNodeParameter('caption', 0);
@@ -16,7 +16,7 @@ export async function sendPoll(ef: IExecuteFunctions) {
 			optionValue: string;
 		}[];
 
-		// Opções adicionais
+		// Opciones adicionales
 		const options_message = ef.getNodeParameter('options_message', 0, {}) as {
 			delay?: number;
 			quoted?: {
@@ -26,15 +26,15 @@ export async function sendPoll(ef: IExecuteFunctions) {
 			};
 		};
 
-		// Verifica se options é um array e não está vazio
+		// Verifica si las opciones son un array y no están vacías
 		const pollOptions = Array.isArray(options) ? options.map((option) => option.optionValue) : [];
 
 		if (pollOptions.length === 0) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Opções da enquete inválidas',
-					details: 'A enquete precisa ter pelo menos uma opção',
+					message: 'Opciones de encuesta inválidas',
+					details: 'La encuesta necesita tener al menos una opción',
 					code: 'INVALID_POLL_OPTIONS',
 					timestamp: new Date().toISOString(),
 				},
@@ -52,12 +52,12 @@ export async function sendPoll(ef: IExecuteFunctions) {
 			values: pollOptions,
 		};
 
-		// Adiciona delay se especificado
+		// Añade retraso si se especifica
 		if (options_message.delay) {
 			body.delay = options_message.delay;
 		}
 
-		// Adiciona quoted se especificado
+		// Añade quoted si se especifica
 		if (options_message.quoted?.messageQuoted?.messageId) {
 			body.quoted = {
 				key: {
@@ -88,10 +88,10 @@ export async function sendPoll(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar enquete',
+					? 'Parámetros inválidos o ausentes'
+					: 'Error al enviar encuesta',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Verifica si todos los campos obligatorios se completaron correctamente'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

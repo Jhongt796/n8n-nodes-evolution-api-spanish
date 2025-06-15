@@ -42,7 +42,7 @@ export async function readMessages(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao marcar mensagens como lidas',
+                details: 'Error al marcar mensajes como leídos',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},
